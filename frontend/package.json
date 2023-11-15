@@ -1,0 +1,16 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx browser-sync start --server",
+    "dev:start": "npx browser-sync start --server --files '*.html, js/*.js'",
+    "start:dev": "npx browser-sync start --server --files '*.html, js/*.js'"
+  },
+  "author": "José Alves de Figueiredo Neto",
+  "dependencies": {
+    "browser-sync": "^2.29.3"
+  },
+  "license": "MIT"
+}

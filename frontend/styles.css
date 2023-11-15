@@ -1,0 +1,144 @@
+html {
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+footer {
+  background-color: #dedade;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 12em;
+  max-width: 12em;
+  border-radius: 1em;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.search-input {
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 5px 0px 5px 5px;
+  margin-bottom: 1em;
+  border: 1.5px solid;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-btn {
+  border-radius: 10px;
+  border-width: 2px;
+  background-color: #dedade;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid;
+}
+
+
+.search-btn img {
+  margin-bottom: 5px;
+}
+
+.search-btn:hover {
+  background-color: #bcb8bc;
+} 
+
+.icon {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+jn-table-item {
+  position: relative;
+  margin-bottom: 1em;
+  width: 18em;
+  max-height: 40em;
+  justify-content: center;
+  box-shadow: -2px -2px 8px #9b979b;
+  border-radius: 15px;
+  padding: 1em 1em 0.5em 1em;
+}
+
+.table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px 1em 0px 1em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.item-price {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #146eb4;
+  border-bottom-color: #ff9900;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
+a:visited {
+  color: #0077b5;
+}

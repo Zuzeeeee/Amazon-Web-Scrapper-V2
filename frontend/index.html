@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="./app.js" type="module"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      type="module"
+    ></script>
+    <title>Amazom Web-Scrapper</title>
+  </head>
+  <body>
+    <header>
+        <h1>Amazon Web-Scrapper</h1>
+    </header>
+    <section>
+      <form id="form">
+        <div class="column">
+          <label>
+            Search:
+            <div class="row">
+              <input
+                autocomplete="off"
+                id="search"
+                class="search-input"
+                placeholder="Type to search"
+              />
+            </div>
+            <label>
+              Asin:
+              <div class="row">
+                <input
+                  autocomplete="off"
+                  id="asin"
+                  class="search-input"
+                  placeholder="Type to search"
+                />
+              </div>
+              <div class="btn-container">
+                <button id="submit" class="search-btn">
+                  <img class="icon" src="./images/search.svg" />
+                  Search
+                </button>
+              </div>
+          </label>
+        </div>
+      </form>
+    </section>
+    <section>
+      <jn-error />
+    </section>
+    <section>
+      <jn-table></jn-table>
+    </section>
+    <footer>
+      <p>
+        Done for
+        <a href="https://www.linkedin.com/in/jose-alves-dev/" target="_blank"
+          >José Alves</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
