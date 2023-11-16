@@ -51,6 +51,6 @@ or in dev mode, run:
 
 Server is hosted by default on <a href="http://localhost:5000" target="_blank">localhost:5000</a>
 
-### Important
+## Important
 
 If running on dev mode, update the [env](./backend/.env) Enviroment to "DEV" to avoid cors problems
