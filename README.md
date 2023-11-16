@@ -3,6 +3,7 @@
 A simple scraper that read the amazon search page and return relevant data, such:
 
 - Item id
+- Item index
 - Name of the product
 - Price of the product
 - Url of the image
