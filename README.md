@@ -16,15 +16,15 @@ If its your first time running this project, first you gonna need to install the
 
 > npm install
 
-then you need update the user agent on ./backend/.env to your own user-agent.
-
 ## Getting the User Agente
+
+Then you need update the user agent on ./backend/.env to your own user-agent.
 
 Click on the link below, and copy your user agent.
 
 <a href="https://whatmyuseragent.com" target="_blank">whatmyuseragent.com</a>
 
-After go to ./backend/.env and update the USER_AGENT variable.
+After go to [env](./backend/.env) and update the USER_AGENT variable.
 
 ## Front-end
 
@@ -49,3 +49,7 @@ or in dev mode, run:
 > npm run dev:api
 
 Server is hosted by default on <a href="http://localhost:5000" target="_blank">localhost:5000</a>
+
+### Important
+
+If running on dev mode, update the [env](./backend/.env) Enviroment to "DEV" to avoid cors problems.

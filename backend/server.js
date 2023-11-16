@@ -11,11 +11,19 @@ const paginatedUrl = (search, page) => `https://www.amazon.com/s?k=${search}&spr
 const userAgent = process.env.USER_AGENT;
 const header = {'User-Agent': userAgent, 'Accept-Language': 'en-US, en;q=0.5'};
 
+const origin_port = process.env.ENVIROMENT.toUpperCase() == 'DEV' ? "3000" : "8080";
 
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: `http://localhost:${origin_port}`
 }));
 
+/**
+ * Scrape the amazon data from the search page based on the query parameters.
+ * 
+ * @param {Object} q The request query  
+ * @param {*} res Function to resolve the request
+ * @returns A array of Products if theres no id (aka asin) on the query parameters, one Product if a equal id was found on the page, or error if none of the cases before. 
+ */
 const fetchData = async (q, res) => {
   let items = [];
   try {
